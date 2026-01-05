@@ -3,17 +3,17 @@ import { NextResponse } from "next/server"
 export async function POST(request: Request) {
   try {
     const { password } = await request.json()
-    console.log("[v0] Login attempt received")
+    console.log(" Login attempt received")
 
     const adminPassword = process.env.ADMIN_PASSWORD || "admin"
-    console.log("[v0] Checking password against:", adminPassword === password ? "MATCH" : "MISMATCH")
+    console.log("Checking password against:", adminPassword === password ? "MATCH" : "MISMATCH")
 
     if (password !== adminPassword) {
-      console.log("[v0] Invalid password attempt")
+      console.log(" Invalid password attempt")
       return NextResponse.json({ message: "Invalid password" }, { status: 401 })
     }
 
-    console.log("[v0] Password valid, setting cookie")
+    console.log( "Password valid, setting cookie")
     const response = NextResponse.json({ message: "Login successful" }, { status: 200 })
 
     // Set cookie without Secure flag for localhost testing

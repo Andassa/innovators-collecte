@@ -8,16 +8,11 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Innovators Collecte',
-  description: 'Plateforme de collecte de fonds transparente pour les Innovators',
+  description: 'Plateforme de collecte de fonds transparente pour l\'équipe Innovators - Madagascar',
   generator: 'Innovators',
   icons: {
-    icon: [
-      {
-        url: '/Madagascar.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/Madagascar.svg',
+    icon: '/Madagascar.png',
+    apple: '/Madagascar.png',
   },
 }
 
