@@ -49,7 +49,7 @@ export async function DonationCards() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Donation Sources</h2>
+        <h2 className="text-3xl font-bold text-foreground mb-12 text-center">Sources des Dons</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
           {donations.map((donation) => (
             <DonationCard key={donation.id} {...donation} />

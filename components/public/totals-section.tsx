@@ -12,7 +12,7 @@ export async function TotalsSection() {
   const remaining = Math.max(0, goal - totalEuro)
   const percentage = Math.min(100, (totalEuro / goal) * 100)
 
-  const lastUpdated = new Date().toLocaleDateString("en-US", {
+  const lastUpdated = new Date().toLocaleDateString("fr-FR", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -26,7 +26,7 @@ export async function TotalsSection() {
         {/* Main total */}
         <div className="text-center space-y-6">
           <div className="space-y-2">
-            <p className="text-sm font-medium text-foreground/60 uppercase tracking-wider">Total Collected</p>
+            <p className="text-sm font-medium text-foreground/60 uppercase tracking-wider">Total Collecté</p>
             <p className="text-5xl sm:text-6xl font-bold text-foreground">
               {totalEuro.toLocaleString("fr-FR", {
                 minimumFractionDigits: 2,
@@ -43,7 +43,7 @@ export async function TotalsSection() {
 
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-card/40 backdrop-blur-xl border border-foreground/10 rounded-lg p-6">
-              <p className="text-sm text-foreground/60 uppercase tracking-wider mb-2">Goal</p>
+              <p className="text-sm text-foreground/60 uppercase tracking-wider mb-2">Objectif</p>
               <p className="text-2xl font-bold text-foreground">
                 {goal.toLocaleString("fr-FR", {
                   minimumFractionDigits: 2,
@@ -54,7 +54,7 @@ export async function TotalsSection() {
             </div>
 
             <div className="bg-card/40 backdrop-blur-xl border border-foreground/10 rounded-lg p-6">
-              <p className="text-sm text-foreground/60 uppercase tracking-wider mb-2">Remaining</p>
+              <p className="text-sm text-foreground/60 uppercase tracking-wider mb-2">Restant</p>
               <p className="text-2xl font-bold text-foreground">
                 {remaining.toLocaleString("fr-FR", {
                   minimumFractionDigits: 2,
@@ -68,12 +68,11 @@ export async function TotalsSection() {
 
         {/* Transparency note */}
         <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 text-center space-y-2">
-          <p className="text-sm font-medium text-foreground">Transparency & Trust</p>
+          <p className="text-sm font-medium text-foreground">Transparence & Confiance</p>
           <p className="text-sm text-foreground/70">
-            All donation amounts are manually updated by the organization to ensure accuracy and maintain our commitment
-            to transparency.
+            Tous les montants des dons sont mis à jour manuellement par l&apos;organisation pour garantir l&apos;exactitude et maintenir notre engagement envers la transparence.
           </p>
-          <p className="text-xs text-foreground/50 pt-4">Last updated: {lastUpdated}</p>
+          <p className="text-xs text-foreground/50 pt-4">Dernière mise à jour : {lastUpdated}</p>
         </div>
       </div>
     </section>

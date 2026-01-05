@@ -23,15 +23,14 @@ export function Hero() {
       {/* Content */}
       <div className="relative max-w-4xl mx-auto text-center space-y-6">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-          Together We Make a Difference
+          Innovators Collecte
         </h1>
         <p className="text-lg sm:text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto">
-          Join our international charity contest and help us build a better world. Every donation, regardless of amount
-          or currency, brings us closer to our goal.
+          Rejoignez notre collecte de fonds et aidez-nous à construire un monde meilleur. Chaque don, quel que soit le montant ou la devise, nous rapproche de notre objectif.
         </p>
         <div className="pt-4">
           <div className="inline-block px-6 py-3 rounded-lg bg-primary/10 border border-primary/20 backdrop-blur-md">
-            <p className="text-sm font-medium text-foreground">All donations are transparently tracked and updated</p>
+            <p className="text-sm font-medium text-foreground">Tous les dons sont suivis et mis à jour de manière transparente</p>
           </div>
         </div>
       </div>

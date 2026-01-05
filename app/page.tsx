@@ -8,8 +8,8 @@ export const dynamic = "force-dynamic"
 export const revalidate = 0
 
 export const metadata = {
-  title: "International Charity Fundraiser",
-  description: "Transparent charity fundraising platform showcasing donations from multiple sources",
+  title: "Innovators Collecte - Collecte de fonds",
+  description: "Plateforme de collecte de fonds transparente des Innovators",
 }
 
 export default function PublicPage() {
