@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 export function Hero() {
   const [mounted, setMounted] = useState(false)
@@ -22,6 +23,16 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative max-w-4xl mx-auto text-center space-y-6">
+        {/* Logo Madagascar */}
+        <div className="flex justify-center mb-4">
+          <Image 
+            src="/Madagascar.svg" 
+            alt="Logo Madagascar" 
+            width={120} 
+            height={120}
+            className="drop-shadow-lg"
+          />
+        </div>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
           Innovators Collecte
         </h1>
