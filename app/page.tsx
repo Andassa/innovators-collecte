@@ -1,6 +1,5 @@
-import { Hero } from "@/components/public/hero"
-import { DonationCards } from "@/components/public/donation-cards"
-import { TotalsSection } from "@/components/public/totals-section"
+import { Hero } from "@/components/public/hero-wrapper"
+import { TotalsSection } from "@/components/public/totals-wrapper"
 import { Footer } from "@/components/public/footer"
 
 // Désactiver le cache pour toujours afficher les données à jour
@@ -14,9 +13,8 @@ export const metadata = {
 
 export default function PublicPage() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background overflow-x-hidden">
       <Hero />
-      <DonationCards />
       <TotalsSection />
       <Footer />
     </main>
