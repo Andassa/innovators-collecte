@@ -227,10 +227,10 @@ export function HeroClient({ data }: HeroProps) {
 
       {/* ===== HERO MAIN CONTENT ===== */}
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[135px]">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 pt-12 lg:pt-[100px]">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-12 pt-12 lg:pt-[100px]">
           
           {/* LEFT - Text content */}
-          <div className="flex-1 max-w-full lg:max-w-[400px] text-center lg:text-left">
+          <div className="flex-shrink-0 w-full lg:w-[400px] text-center lg:text-left">
             {/* Title - Figma: font-size: 72px, line-height: 80px */}
             <h1 
               className={`font-[var(--font-rowdies)] font-light text-[#3A1700] text-4xl sm:text-5xl lg:text-6xl xl:text-[72px] leading-tight lg:leading-[80px] transition-all duration-700 ${
@@ -280,7 +280,7 @@ export function HeroClient({ data }: HeroProps) {
             {/* Main circular image */}
             {/* Cercle rétréci */}
             <div 
-              className="relative mx-auto"
+              className="relative mx-auto lg:mx-0 lg:ml-auto"
               style={{ 
                 width: 'min(480px, 80vw)', 
                 height: 'min(480px, 80vw)',
